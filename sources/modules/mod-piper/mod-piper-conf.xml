@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<configuration>
+    <settings>
+        <param name="use-gpu" value="false"/>
+        <param name="espeak-data" value="/opt/piper/lib/espeak-ng-data"/>
+    </settings>
+
+    <languages>
+        <language id="en" preload="true" model="/opt/piper/models/en_US-lessac-medium.onnx" />
+        <language id="ru" preload="true" model="/opt/piper/models/ru_RU-irina-medium.onnx" />
+    </languages>
+
+</configuration>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<configuration version="1">
+    <http-server>
+        <settings>
+            <param name="address" value="127.0.0.1"/>
+            <param name="port" value="8802"/>
+            <param name="secret" value="secret"/>
+            <param name="max-conns" value="100"/>
+            <param name="max-idle" value="300"/>
+        </settings>
+    </http-server>
+
+    <core>
+        <settings>
+        </settings>
+    </core>
+
+    <modules>
+        <module enabled="true" path="mod-piper.so" languages="ru,en"/>
+    </modules>
+
+</configuration>
