@@ -253,7 +253,7 @@ int ttsd_main(int argc, char **argv) {
     ttsd_global->fl_ready = true;
     ttsd_global->fl_shutdown = false;
 
-    log_notice("ttsd-%s [pid:%d / uid:%d / gid:%d / Opensouce] - started", APP_VERSION_STR, srv_pid, getuid(), getgid());
+    log_notice("ttsd-%s [pid:%d / uid:%d / gid:%d / Opensource] - started", APP_VERSION_STR, srv_pid, getuid(), getgid());
 
     while(ttsd_global->fl_ready) {
         WSTK_SCHED_YIELD(1000);
