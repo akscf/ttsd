@@ -231,7 +231,7 @@ wstk_status_t ttsd_encode_mp3(ttsd_codec_result_t **out, uint32_t samplerate, ui
 
     memset(mp3buf, 0x0, mp3buf_sz);
     rlen = lame_encode_buffer(lgf, (void *)buf, NULL, (int)(buf_len / sizeof(int16_t)), mp3buf, mp3buf_sz);
-    rlen = (rlen + (samplerate / 2) <= mp3buf_sz ? rlen + (samplerate / 2) : rlen);
+    //rlen = (rlen + (samplerate / 2) <= mp3buf_sz ? rlen + (samplerate / 2) : rlen);
     if((status = ttsd_codec_result_alloc(&out_local, 2, mp3buf, rlen)) != WSTK_STATUS_SUCCESS) {
         log_error("ttsd_codec_result_alloc()");
         goto out;
