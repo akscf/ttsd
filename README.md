@@ -1,7 +1,7 @@
 <p>
   High performance, offile, neural, web-based text-to-speech service, based on the <a href="https://github.com/rhasspy/piper" target="_blank">Piper</a> codebase and models. <br>
   Aimed at use in VoIP services, supports multithread mode, allows to preload and share models, supports output formats: MP3,WAV,L16, contains built-in resampler. <br>
-  Requires: 
+  Dependencies: 
     <a href="https://onnxruntime.ai/" target="_blank">onnxruntime</a>, 
     <a href="https://github.com/espeak-ng/espeak-ng" target="_blank">espeak-ng</a>, 
     <a href="https://github.com/rhasspy/piper-phonemize" target="_blank">piper-phonemize</a>,  
